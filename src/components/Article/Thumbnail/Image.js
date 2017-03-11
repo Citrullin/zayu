@@ -1,7 +1,7 @@
 import Inferno from 'inferno';
 
-const Image = ({ imageUrl }) => (
-    <img class="article-thumbnail__image" src={ imageUrl }/>
+const Image = ({ src, alt }) => (
+    <img class="article-thumbnail__image" src={ src } alt={ alt }/>
 );
 
 export default Image;

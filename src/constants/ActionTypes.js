@@ -2,3 +2,7 @@ export const NAV_ELEMENT_CLICK =            'NAV_ELEMENT_CLICK';
 export const ADD_ARTICLE_FILTER_RULE =      'ADD_ARTICLE_FILTER_RULE';
 export const DELETE_ARTICLE_FILTER_RULE =   'DELETE_ARTICLE_FILTER_RULE';
 export const RECEIVED_ARTICLES =            'RECEIVED_ARTICLES';
+export const RECEIVED_ABOUT_ME =            'RECEIVED_ABOUT_ME_CONTENT';
+export const CHANGE_URL_STARTED =           'CHANGE_URL_STARTED';
+export const API_REQUEST_SEND =             'API_REQUEST_SEND';
+export const CHANGE_URL_FINISHED =          'CHANGE_URL_FINISHED';

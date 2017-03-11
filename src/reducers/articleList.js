@@ -1,20 +1,24 @@
 /*
+Actions available for articleList reducer
  action = {type: 'DELETE_ARTICLE_FILTER_RULE', name: 'sport'}
  action = {type: 'ADD_ARTICLE_FILTER_RULE', name: 'sport'}
+
+ArticleList structure:
+ [
+     {
+     name: '',
+     url: '',
+     headline: '',
+     description: '',
+     imageUrl: '',
+     tags: [],
+     show: false
+     }
+ ]
  */
 import * as ActionTypes from 'ActionTypes';
 
-let emptyArticleList = [
-    {
-        name: '',
-        url: '',
-        headline: '',
-        description: '',
-        imageUrl: '',
-        tags: [],
-        show: false
-    }
-];
+let emptyArticleList = [];
 
 const getModifiedArticleByAddedTag = (articles, tag) => articles.map(article => {
     article.show = article.tags.map(articleTag => {

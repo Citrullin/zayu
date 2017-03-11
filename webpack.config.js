@@ -19,7 +19,7 @@ module.exports = {
     resolve: {
         root: path.resolve('src/'),
         alias: {
-            BlogFrontpage: 'containers/Blog/BlogFrontpage',
+            BlogFrontPage: 'containers/Blog/BlogFrontPage',
             AboutMe: 'containers/Personal/AboutMe',
             CV: 'containers/Personal/CV',
             ActionTypes: 'constants/ActionTypes',
@@ -31,10 +31,11 @@ module.exports = {
             NavigationBarElement: 'components/Navigation/NavigationElement',
             App: 'App',
             AppRouter: 'AppRouter',
-            actions: 'actions',
             appReducers: 'reducers',
-            articleListReducers: 'reducers/articleList',
-            ArticleAPI: 'api/articles'
+            articleListReducer: 'reducers/articleList',
+            ArticleAPI: 'api/articles',
+            AboutMeAPI: 'api/aboutMe',
+            URLChangeFlowHandler: 'middleware/URLChangeFlowHandler'
         },
         modulesDirectory: ['node_modules', './src'],
         extensions: ['', '.js', '.jsx']

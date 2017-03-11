@@ -4,7 +4,13 @@
     "url": "",
     "headline": "I love Math",
     "description": "Yes, i do",
-    "imageUrl": "img/ILoveMath.jpg",
+    "about": {
+      "name": "Philipp Blum",
+      "username": "citrullin",
+      "datetime": "2011-11-18 14:54:39Z",
+      "display_datetime": "Yesterday"
+    },
+    "image": {"url": "img/showMeInMyEyes.jpg", "description": "This is a"},
     "tags": ["math", "love", "cat"],
     "show": true
   },
@@ -13,7 +19,13 @@
     "url": "",
     "headline": "Yupp",
     "description": "No comment",
-    "imageUrl": "",
+    "about": {
+      "name": "Philipp Blum",
+      "username": "citrullin",
+      "datetime": "2011-11-18 14:54:39Z",
+      "display_datetime": "Yesterday"
+    },
+    "image": {"url": "img/showMeInMyEyes.jpg", "description": "This is a"},
     "tags": ["cat", "hate"],
     "show": true
   },
@@ -21,8 +33,14 @@
     "name": "show-me",
     "url": "",
     "headline": "Show me in my eyes!",
-    "description": "",
-    "imageUrl": "img/showMeInMyEyes.jpg",
+    "description": "Bla bli blub",
+    "about": {
+      "name": "Philipp Blum",
+      "username": "citrullin",
+      "datetime": "2011-11-18 14:54:39Z",
+      "display_datetime": "Yesterday"
+    },
+    "image": {"url": "img/showMeInMyEyes.jpg", "description": "This is a"},
     "tags": ["cat", "eyes"],
     "show": true
   },
@@ -30,8 +48,14 @@
     "name": "yes-of-course",
     "url": "",
     "headline": "YES",
-    "description": "",
-    "imageUrl": "img/YesOfCourse.png",
+    "description": "Yes man!",
+    "about": {
+      "name": "Philipp Blum",
+      "username": "citrullin",
+      "datetime": "2011-11-18 14:54:39Z",
+      "display_datetime": "Yesterday"
+    },
+    "image": {"url": "img/showMeInMyEyes.jpg", "description": "This is a"},
     "tags": ["cat", "yes"],
     "show": true
   }

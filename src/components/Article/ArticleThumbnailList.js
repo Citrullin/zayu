@@ -2,11 +2,11 @@ import Inferno from 'inferno';
 import Component from 'inferno-component';
 import { connect }  from 'inferno-redux';
 
-import {getVisibleArticleList, updateArticleList} from 'articleListReducers';
+import {getVisibleArticleList, updateArticleList} from 'articleListReducer';
 import ArticleThumbnailContainer from './Thumbnail/ArticleThumbnailContainer';
 
 class ArticleThumbnailList extends Component{
-    static _renderArticle(article){
+    _renderArticle(article){
         return (
             <ArticleThumbnailContainer data={ article } />
         )
@@ -20,7 +20,7 @@ class ArticleThumbnailList extends Component{
             elements.push(this._renderArticle(article));
         });
 
-        return (<div class="articleThumbnailList">{elements}</div>);
+        return (<section><div class="article-thumbnail-list">{elements}</div></section>);
     }
 }
 

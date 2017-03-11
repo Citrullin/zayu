@@ -1,7 +1,16 @@
+import * as ActionTypes from 'ActionTypes';
+
 export const getReceivedArticlesAction = (articles) => {
     return {
         type:       ActionTypes.RECEIVED_ARTICLES,
         articles
+    }
+};
+
+export const getReceivedAboutMeAction = (content) => {
+    return {
+        type: ActionTypes.RECEIVED_ABOUT_ME,
+        content
     }
 };
 
