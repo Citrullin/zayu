@@ -1,0 +1,57 @@
+$development: true;
+
+$extra-small: true;
+$small      : true;
+$medium     : true;
+$large      : true;
+$none       : false;
+
+$grid-xs: 24;
+$grid-sm: 24;
+$grid-md: 24;
+$grid-lg: 24;
+
+$extra-small_max    : 768px;
+$small_min          : 769px;
+$small_max          : 992px;
+$medium_min         : 993px;
+$medium_max         : 1199px;
+$large_min          : 1200px;
+
+$extra-small_padding  : 10px;
+$small_padding        : 10px;
+$medium_padding       : 10px;
+$large_padding        : 10px;
+$none_padding         : 10px;
+
+$brand-color:           #67A5CA;
+$brand-dark-color:      #608398;
+$brand-darker-color:    #215F83;
+$brand-light-color:     #91C5E4;
+$brand-lighter-color:   #A7CEE4;
+$success-color:         #66D39C;
+$success-dark-color:    #619F7F;
+$success-darker-color:  #218954;
+$success-light-color:   #8EE9BB;
+$success-lighter-color: #A7E9C7;
+$warn-color:            #FFDC7B;
+$warn-dark-color:       #BFAB75;
+$warn-darker-color:     #A68428;
+$warn-light-color:      #FFE59C;
+$warn-lighter-color:    #FFECB6;
+$danger-color:          #FF9A7B;
+$danger-dark-color:     #BF8775;
+$danger-darker-color:   #A64628;
+$danger-light-color:    #FFB49C;
+$danger-lighter-color:  #FFC8B6;
+$grey-darker:           #323234;
+$grey-dark:             lighten(#323234, 10%);
+$grey:                  lighten(#323234, 20%);
+$grey-light:            lighten(#323234, 30%);
+$grey-lighter:          lighten(#323234, 40%);
+
+$bright-lighter:  #fff;
+$bright-light:    darken($bright-lighter, 10%);
+$bright:          darken($bright-lighter, 15%);
+$bright-dark:     darken($bright-lighter, 20%);
+$bright-darker:     darken($bright-lighter, 25%);

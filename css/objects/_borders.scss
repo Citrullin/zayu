@@ -1,0 +1,21 @@
+.o-border-right-left-1_bright{
+  border-left: 1px solid $bright;
+  border-right: 1px solid $bright;
+}
+
+.o-border-right-left-1_bright-dark{
+  border-left: 1px solid $bright-dark;
+  border-right: 1px solid $bright-dark;
+}
+
+.o-border-top-1_warn{
+  border-top: 2px solid $warn-color;
+}
+
+.o-border-top-2_danger{
+  border-top: 2px solid $danger-color;
+}
+
+.o-border-top-2_success{
+  border-top: 2px solid $success-color;
+}
