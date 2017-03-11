@@ -17,7 +17,10 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin()
     ],
     resolve: {
-        root: path.resolve('src/'),
+        modules:[
+            path.resolve('src/'),
+            "node_modules"
+        ],
         alias: {
             BlogFrontPage: 'containers/Blog/BlogFrontPage',
             AboutMe: 'containers/Personal/AboutMe',
@@ -37,29 +40,32 @@ module.exports = {
             AboutMeAPI: 'api/aboutMe',
             URLChangeFlowHandler: 'middleware/URLChangeFlowHandler'
         },
-        modulesDirectory: ['node_modules', './src'],
-        extensions: ['', '.js', '.jsx']
+        extensions: ['.js', '.jsx']
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
-                loaders: ['babel-loader'],
+                use: [{
+                    loader: 'babel-loader'
+                }],
                 include: path.join(__dirname, 'src')
             },
             {
-                test: /\.json$/,
-                loaders: ['json']
-            },
-            {
                 test: /\.woff$|\.ttf$|\.wav$|\.mp3$/,
-                loader: "file"
+                use: [{
+                    loader: "file-loader"
+                }]
             },
             {
                 test: /.*\.(gif|png|jpe?g|svg)$/i,
-                loaders: [
-                    'file?hash=sha512&digest=hex&name=[hash].[ext]',
-                    'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
+                use: [
+                    {
+                        loader:  'file-loader?hash=sha512&digest=hex&name=[hash].[ext]'
+                    },
+                    {
+                        loader: 'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
+                    }
                 ]
             }
         ]
