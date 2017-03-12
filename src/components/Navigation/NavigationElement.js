@@ -20,7 +20,7 @@ class NavigationElement extends Component{
 
     render(){
         return (
-            <a class="navigation-bar__element" onClick={ this._clickHandler.bind(this) }>
+            <a class="o-grid-xs-6 o-font-size-default c-navigation-bar__element" onClick={ this._clickHandler.bind(this) }>
                 {this.props.data.name}
             </a>
         );

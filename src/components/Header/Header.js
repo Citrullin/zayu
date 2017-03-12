@@ -2,10 +2,10 @@ import Inferno from 'inferno';
 import Logo from './Logo'
 
 const BlogHeader = ({ data }) => (
-    <div class="header">
+    <div class="o-grid-xs-6 header">
         <Logo data={ data.logo }/>
-        <div class="header__title">{ data.title }</div>
-        <div class="header__description">{ data.description }</div>
+        <div class="o-grid-xs-6 header__title">{ data.title }</div>
+        <div class="o-grid-xs-6 header__description">{ data.description }</div>
     </div>
 );
 

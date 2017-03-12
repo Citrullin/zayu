@@ -36,7 +36,7 @@ class AppHelper{
 export default class App extends Component {
     render(){
         return(
-            <div>
+            <div class="o-row">
                 <header>
                     { AppHelper.getBlogHeader() }
                     { AppHelper.getNavigationBar() }

@@ -3,6 +3,6 @@ import Component from 'inferno-component';
 
 export default class NavigationBar extends Component{
     render(){
-        return (<nav class="navigation-bar">{this.props.children}</nav>);
+        return (<nav class="o-grid-xs-6 c-navigation-bar">{this.props.children}</nav>);
     }
 }
