@@ -1,8 +1,10 @@
 var path = require('path');
 var webpack = require('webpack');
 
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = {
-    devtool: 'eval',
+    devtool: 'source-map',
     entry: [
         'webpack-dev-server/client?http://localhost:3000',
         'webpack/hot/only-dev-server',
@@ -14,10 +16,11 @@ module.exports = {
         publicPath: '/static/'
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new ExtractTextPlugin('style.css')
     ],
     resolve: {
-        modules:[
+        modules: [
             path.resolve('src/'),
             "node_modules"
         ],
@@ -61,12 +64,20 @@ module.exports = {
                 test: /.*\.(gif|png|jpe?g|svg)$/i,
                 use: [
                     {
-                        loader:  'file-loader?hash=sha512&digest=hex&name=[hash].[ext]'
+                        loader: 'file-loader?hash=sha512&digest=hex&name=[hash].[ext]'
                     },
                     {
                         loader: 'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
                     }
                 ]
+            },
+            {
+                test: /\.scss$/,
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    //resolve-url-loader may be chained before sass-loader if necessary
+                    use: ['css-loader', 'sass-loader']
+                })
             }
         ]
     }
